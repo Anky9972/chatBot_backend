@@ -19,7 +19,6 @@ app.use('/api/v1', botroute);
 
 // Home route
 app.get('/', (req, res) => {
-    res.set('Access-Control-Allow-Origin', '*');
   res.send('This is HOME page');
 });
 
