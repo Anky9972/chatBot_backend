@@ -5,9 +5,11 @@ const bodyParser = require('body-parser');
 
 app.use(express.json());
 app.use(cors({
-  origin: 'https://portfolio-vivek-gaur-02.vercel.app' 
-}));
-
+    origin: '*',
+    methods: '*',
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+  }));
 app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 4000;
