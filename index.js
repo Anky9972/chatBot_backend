@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 app.use(express.json());
 app.use(cors({
-    origin: '*',
+    'Access-Control-Allow-Origin': '*',
     methods: '*',
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
