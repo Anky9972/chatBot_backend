@@ -5,11 +5,11 @@ const bodyParser = require('body-parser');
 
 app.use(express.json());
 app.use(cors({
-    'Access-Control-Allow-Origin': '*',
-    methods: '*',
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true,
-  }));
+  origin: '*', 
+  methods: '*', 
+  allowedHeaders: ['Content-Type', 'Authorization'], 
+  credentials: true, 
+}));
 app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 4000;
