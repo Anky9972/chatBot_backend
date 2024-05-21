@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 app.use(express.json());
 app.use(cors({
-  origin: '*', 
+  origin: 'https://portfolio-vivek-gaur-02.vercel.app', 
   methods: '*', 
   allowedHeaders: ['Content-Type', 'Authorization'], 
   credentials: true, 
